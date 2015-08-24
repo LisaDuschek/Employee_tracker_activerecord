@@ -8,5 +8,5 @@ describe(Employee) do
       expect(test_employee.division()).to(eq(test_division))
     end
   end
-  
+
 end

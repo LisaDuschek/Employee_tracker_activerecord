@@ -2,12 +2,10 @@
 
 <h3>Divisions:</h3>
 
-            <% if @employee.divisions() != nil  %>
-              <% divisions = @employee.divisions() %>
-              <% divisions.each do |division| %>
-                <%= division.name() %>
+            <% if @employee.division() != nil  %>
+                <%= @employee.division.name() %>
               <% end %>
-            <% end %>
+
 
 
 <form action='/employees/<%= @employee.id() %>' method='post'>
@@ -23,7 +21,7 @@
 </form>
 
 
-<form action="/employee/<%= @employee.id() %>" method="post">
+<form action="/employees/<%= @employee.id() %>" method="post">
   <input name="_method" type="hidden" value="delete">
   <button type="submit">Delete Employee</button>
 </form>

@@ -11,4 +11,5 @@ describe('shows human catalog', {:type => :feature}) do
 		visit('/')
 		expect(page).to have_content('Human Categorizer')
 	end
-end
+
+	
