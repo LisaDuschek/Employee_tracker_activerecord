@@ -10,4 +10,5 @@ describe (Division) do
       expect(test_division.employees()).to(eq([test_employee, test_employee2]))
     end
   end
+  
 end
